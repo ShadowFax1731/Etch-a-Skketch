@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+    background-color: lightcoral;
+}
+
+.input-container{
+    margin-top: 30px;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+
+.grid-container{
+    display: inline-grid;
+    border: 1px solid black;
+    background-color: white;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    gap: 1px;
+    width: 800px;
+    height: 800px;
+}
+
+.grid-item {
+    background-color: gold;
+    border: 1px solid black;
+    color: gold;
+    
+}
+
+
+.grid-item :hover {
+    background-color: black;
+}
+
+.controls{
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: darkturquoise;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+}
+
